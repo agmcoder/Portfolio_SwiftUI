@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct Experiencie:Identifiable{
+struct Experience:Identifiable{
     var id:String
     let companyName:String
     let role:String

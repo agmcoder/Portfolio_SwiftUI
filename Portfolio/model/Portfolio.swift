@@ -14,5 +14,5 @@ struct Portfolio{
     
     
     let skills:[Skill]
-    let experiencie:[Experiencie]
+    let experiences:[Experience]
 }

@@ -17,7 +17,7 @@
 		9EDB2E3A2815E0020068F325 /* PortfolioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E392815E0020068F325 /* PortfolioUITests.swift */; };
 		9EDB2E3C2815E0020068F325 /* PortfolioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E3B2815E0020068F325 /* PortfolioUITestsLaunchTests.swift */; };
 		9EDB2E4C2815E17E0068F325 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E4B2815E17E0068F325 /* Skill.swift */; };
-		9EDB2E4E2815E5190068F325 /* Experiencie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E4D2815E5190068F325 /* Experiencie.swift */; };
+		9EDB2E4E2815E5190068F325 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E4D2815E5190068F325 /* Experience.swift */; };
 		9EDB2E502815E6130068F325 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E4F2815E6130068F325 /* Portfolio.swift */; };
 		9EDB2E532815E6C90068F325 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E522815E6C90068F325 /* AppModel.swift */; };
 		9EDB2E582815E8900068F325 /* icons8-swiftui-150(@3x).png in Resources */ = {isa = PBXBuildFile; fileRef = 9EDB2E552815E88F0068F325 /* icons8-swiftui-150(@3x).png */; };
@@ -27,6 +27,7 @@
 		9EDB2E602815F0730068F325 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E5F2815F0730068F325 /* HeaderView.swift */; };
 		9EDB2E622815F8B90068F325 /* SkillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E612815F8B90068F325 /* SkillView.swift */; };
 		9EDB2E642815FCA10068F325 /* SkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E632815FCA10068F325 /* SkillsView.swift */; };
+		9EDB2E66281610430068F325 /* ExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E65281610430068F325 /* ExperienceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +61,7 @@
 		9EDB2E392815E0020068F325 /* PortfolioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioUITests.swift; sourceTree = "<group>"; };
 		9EDB2E3B2815E0020068F325 /* PortfolioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9EDB2E4B2815E17E0068F325 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
-		9EDB2E4D2815E5190068F325 /* Experiencie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experiencie.swift; sourceTree = "<group>"; };
+		9EDB2E4D2815E5190068F325 /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
 		9EDB2E4F2815E6130068F325 /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
 		9EDB2E522815E6C90068F325 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		9EDB2E552815E88F0068F325 /* icons8-swiftui-150(@3x).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-swiftui-150(@3x).png"; sourceTree = "<group>"; };
@@ -70,6 +71,7 @@
 		9EDB2E5F2815F0730068F325 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		9EDB2E612815F8B90068F325 /* SkillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillView.swift; sourceTree = "<group>"; };
 		9EDB2E632815FCA10068F325 /* SkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsView.swift; sourceTree = "<group>"; };
+		9EDB2E65281610430068F325 /* ExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,7 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				9EDB2E4B2815E17E0068F325 /* Skill.swift */,
-				9EDB2E4D2815E5190068F325 /* Experiencie.swift */,
+				9EDB2E4D2815E5190068F325 /* Experience.swift */,
 				9EDB2E4F2815E6130068F325 /* Portfolio.swift */,
 			);
 			path = model;
@@ -219,6 +221,7 @@
 				9EDB2E5F2815F0730068F325 /* HeaderView.swift */,
 				9EDB2E612815F8B90068F325 /* SkillView.swift */,
 				9EDB2E632815FCA10068F325 /* SkillsView.swift */,
+				9EDB2E65281610430068F325 /* ExperienceView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -364,10 +367,11 @@
 				9EDB2E532815E6C90068F325 /* AppModel.swift in Sources */,
 				9EDB2E502815E6130068F325 /* Portfolio.swift in Sources */,
 				9EDB2E602815F0730068F325 /* HeaderView.swift in Sources */,
-				9EDB2E4E2815E5190068F325 /* Experiencie.swift in Sources */,
+				9EDB2E4E2815E5190068F325 /* Experience.swift in Sources */,
 				9EDB2E1C2815E0000068F325 /* ContentView.swift in Sources */,
 				9EDB2E5E2815EE400068F325 /* PortfolioView.swift in Sources */,
 				9EDB2E1A2815E0000068F325 /* PortfolioApp.swift in Sources */,
+				9EDB2E66281610430068F325 /* ExperienceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
