@@ -1,11 +1,11 @@
 {
   "images" : [
     {
+      "filename" : "ios.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "icons8-logo-de-ios-100(@2x).png",
       "idiom" : "universal",
       "scale" : "2x"
     },

@@ -27,7 +27,7 @@ struct PortfolioView: View {
                         .padding(.vertical,32)
                     ExperiencesView(experiences: appModel.portfolio.experiences)
                     
-                    
+                    Spacer()
                     
                 }.padding(24)
                 
@@ -35,8 +35,17 @@ struct PortfolioView: View {
         }
     }
 }
+struct PortfolioView_Previews_light: PreviewProvider {
+    static var previews: some View {
+        GeometryReader{
+            proxy in
+            PortfolioView().colorScheme(.light)
 
-struct PortfolioView_Previews: PreviewProvider {
+        }
+    }
+}
+
+struct PortfolioView_Previews_dark: PreviewProvider {
     static var previews: some View {
         GeometryReader{
             proxy in

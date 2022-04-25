@@ -12,10 +12,10 @@ class AppModel:ObservableObject{
         role: "Software Engineer", description: "Inmensely passionate about mobile development and related tecchnologies.",
         location: "Talavera de la Reina, Toledo, Spain",
         skills: [
-            Skill(id: UUID().uuidString, skillName: "SwiftUI", image: "swiftui-150"),
-            Skill(id: UUID().uuidString, skillName: "IOS", image: "ios-100"),
+            Skill(id: UUID().uuidString, skillName: "SwiftUI", image: "swiftui2x"),
+            Skill(id: UUID().uuidString, skillName: "IOS", image: "ios"),
             Skill(id: UUID().uuidString, skillName: "Jetpak Compose", image: "jetpack_compose"),
-            Skill(id: UUID().uuidString, skillName: "Android", image: "android-100"),
+            Skill(id: UUID().uuidString, skillName: "Android", image: "android"),
             Skill(id: UUID().uuidString, skillName: "Firebase", image: "firebase2x")
     ],
         experiences: [
