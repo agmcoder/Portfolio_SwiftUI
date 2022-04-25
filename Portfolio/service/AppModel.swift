@@ -19,6 +19,7 @@ class AppModel:ObservableObject{
             Skill(id: UUID().uuidString, skillName: "Firebase", image: "firebase2x")
     ],
         experiences: [
+            Experience(id: UUID().uuidString, companyName: "Somisata S.L.", role: "Full Stack Developer", duration: "Sept 2021 - present"),
             Experience(id: UUID().uuidString, companyName: "Somisata S.L.", role: "Full Stack Developer", duration: "Sept 2021 - present")
         ]
     )

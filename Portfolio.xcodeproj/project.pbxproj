@@ -28,6 +28,7 @@
 		9EDB2E622815F8B90068F325 /* SkillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E612815F8B90068F325 /* SkillView.swift */; };
 		9EDB2E642815FCA10068F325 /* SkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E632815FCA10068F325 /* SkillsView.swift */; };
 		9EDB2E66281610430068F325 /* ExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E65281610430068F325 /* ExperienceView.swift */; };
+		9EDB2E68281625FB0068F325 /* ExperiencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E67281625FB0068F325 /* ExperiencesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		9EDB2E612815F8B90068F325 /* SkillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillView.swift; sourceTree = "<group>"; };
 		9EDB2E632815FCA10068F325 /* SkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsView.swift; sourceTree = "<group>"; };
 		9EDB2E65281610430068F325 /* ExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceView.swift; sourceTree = "<group>"; };
+		9EDB2E67281625FB0068F325 /* ExperiencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +224,7 @@
 				9EDB2E612815F8B90068F325 /* SkillView.swift */,
 				9EDB2E632815FCA10068F325 /* SkillsView.swift */,
 				9EDB2E65281610430068F325 /* ExperienceView.swift */,
+				9EDB2E67281625FB0068F325 /* ExperiencesView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				9EDB2E262815E0020068F325 /* Portfolio.xcdatamodeld in Sources */,
 				9EDB2E232815E0020068F325 /* Persistence.swift in Sources */,
 				9EDB2E622815F8B90068F325 /* SkillView.swift in Sources */,
+				9EDB2E68281625FB0068F325 /* ExperiencesView.swift in Sources */,
 				9EDB2E4C2815E17E0068F325 /* Skill.swift in Sources */,
 				9EDB2E532815E6C90068F325 /* AppModel.swift in Sources */,
 				9EDB2E502815E6130068F325 /* Portfolio.swift in Sources */,

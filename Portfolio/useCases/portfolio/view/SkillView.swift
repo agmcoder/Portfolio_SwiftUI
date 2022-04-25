@@ -17,7 +17,7 @@ struct SkillView: View {
             Image(skill.image)
                 .resizable()
                 .scaledToFill()
-                .opacity(0.8)
+                
         }
         .padding()
         .frame(width: width,height: 110)

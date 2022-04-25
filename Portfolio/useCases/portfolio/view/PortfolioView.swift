@@ -23,6 +23,9 @@ struct PortfolioView: View {
             ){
                 LazyVStack(alignment:.center){
                     HeaderView(appModel: appModel)
+                    SkillsView(skills: appModel.portfolio.skills, width: UIScreen.main.bounds.width-40)
+                        .padding(.vertical,32)
+                    ExperiencesView(experiences: appModel.portfolio.experiences)
                     
                     
                     
@@ -35,6 +38,10 @@ struct PortfolioView: View {
 
 struct PortfolioView_Previews: PreviewProvider {
     static var previews: some View {
-        PortfolioView().colorScheme(.dark)
+        GeometryReader{
+            proxy in
+            PortfolioView().colorScheme(.dark)
+
+        }
     }
 }
