@@ -16,7 +16,7 @@ struct ExperiencesView: View {
     @State var showExperiences=true
     
     var body: some View {
-        VStack(alignment:.leading,spacing: 24){
+        VStack(alignment:.leading){
             HStack(spacing:16){
                 
                 Text("Experiences")
@@ -38,7 +38,7 @@ struct ExperiencesView: View {
                 ).buttonStyle(PlainButtonStyle())
                     
                 Spacer()
-            }.padding(.bottom,14)
+            }.padding(.horizontal)
             
                 if(showExperiences){
                     

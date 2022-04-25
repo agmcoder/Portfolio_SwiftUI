@@ -24,8 +24,9 @@ struct PortfolioView: View {
                 LazyVStack(alignment:.center){
                     HeaderView(appModel: appModel)
                     SkillsView(skills: appModel.portfolio.skills, width: UIScreen.main.bounds.width-40)
-                        .padding(.vertical,32)
+                        .padding(.top,32)
                     ExperiencesView(experiences: appModel.portfolio.experiences)
+                    ProjectsView(projects: appModel.portfolio.projects)
                     
                     Spacer()
                     
