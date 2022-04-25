@@ -19,8 +19,19 @@ class AppModel:ObservableObject{
             Skill(id: UUID().uuidString, skillName: "Firebase", image: "firebase2x")
     ],
         experiences: [
-            Experience(id: UUID().uuidString, companyName: "Somisata S.L.", role: "Full Stack Developer", duration: "Sept 2021 - present"),
-            Experience(id: UUID().uuidString, companyName: "Somisata S.L.", role: "Full Stack Developer", duration: "Sept 2021 - present")
+            Experience(id: UUID().uuidString, companyName: "Somisata S.L.", role: "Full Stack Developer", duration: "Sept 2021 - Apr - 2022"),
+            Experience(id: UUID().uuidString, companyName: "Freelance", role: "Native Mobile Developer", duration: "Sept 2021 - present")
+        ],
+        projects: [
+        
+            Project(id: UUID().uuidString, name: "Projecto android", image: "android"),
+            Project(id: UUID().uuidString, name: "Projecto android", image: "android"),
+            Project(id: UUID().uuidString, name: "Projecto android", image: "android"),
+            Project(id: UUID().uuidString, name: "Projecto android", image: "android"),
+            Project(id: UUID().uuidString, name: "Projecto android", image: "android"),
+            Project(id: UUID().uuidString, name: "Projecto android", image: "android")
+
+            
         ]
     )
 }

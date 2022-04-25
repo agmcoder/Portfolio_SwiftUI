@@ -19,7 +19,7 @@ struct SkillView: View {
                 .scaledToFill()
                 
         }
-        .padding()
+        
         .frame(width: width,height: 110)
         .background(RoundedRectangle(cornerRadius: 12).opacity(0.075))
     }

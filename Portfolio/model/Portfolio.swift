@@ -15,4 +15,5 @@ struct Portfolio{
     
     let skills:[Skill]
     let experiences:[Experience]
+    let projects:[Project]
 }

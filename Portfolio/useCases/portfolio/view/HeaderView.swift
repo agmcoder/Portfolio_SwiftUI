@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HeaderView: View {
+    @Environment(\.colorScheme) var colorScheme
     var appModel:AppModel
     
     
@@ -21,7 +22,7 @@ struct HeaderView: View {
                 .clipShape(Circle())
                 .padding(5)
                 .background(Circle())
-                .shadow(color: .black, radius: 10)
+                .shadow(color:colorScheme == .light ? .black:.gray , radius: 10)
             
             Text(appModel.portfolio.name).font(.title2)
             Text(appModel.portfolio.role).font(.caption)
@@ -46,6 +47,19 @@ struct HeaderView: View {
 
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderView(appModel: AppModel()).padding(24)
+        GeometryReader{proxy in
+            HeaderView(appModel: AppModel()).padding(24)
+
+        }
     }
 }
+struct HeaderView_Previews_dark: PreviewProvider {
+    static var previews: some View {
+        GeometryReader{
+            proxy in
+            HeaderView(appModel: AppModel()).padding(24).preferredColorScheme(.dark)
+        }
+        
+    }
+}
+
