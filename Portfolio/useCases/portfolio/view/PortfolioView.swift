@@ -21,16 +21,18 @@ struct PortfolioView: View {
                 .vertical,
                 showsIndicators: false
             ){
+                VStack{
                 LazyVStack(alignment:.center){
                     HeaderView(appModel: appModel)
                     SkillsView(skills: appModel.portfolio.skills, width: UIScreen.main.bounds.width-40)
                         .padding(.top,32)
                     ExperiencesView(experiences: appModel.portfolio.experiences)
-                    ProjectsView(projects: appModel.portfolio.projects)
+                }.padding(.horizontal,24)
+                ProjectsView(projects: appModel.portfolio.projects)
                     
                     Spacer()
                     
-                }.padding(24)
+                }
                 
             }
         }

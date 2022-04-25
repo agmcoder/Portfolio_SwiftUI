@@ -22,6 +22,8 @@ struct ProjectsView: View {
                     .font(.title2)
                     .fontWeight(.bold)
                     .opacity(0.9)
+                    .padding(.leading,24)
+                    
                 Button(
                     action:{
                         withAnimation(.easeInOut(duration: 0.40)){
@@ -43,7 +45,7 @@ struct ProjectsView: View {
             if(showProjects){
                 VStack{
                     ScrollView(.horizontal){
-                            LazyHStack(alignment: .top, spacing: 10){
+                            LazyHStack(alignment: .top, spacing: 0){
                                 
 
                                 ForEach(projects) { project in

@@ -16,9 +16,10 @@ struct HeaderView: View {
     var body: some View {
         
         VStack{
-            Image("self")
+            Image("logo_agmcoder")
                 .resizable()
                 .frame(width: 100, height: 100)
+                .scaledToFill()
                 .clipShape(Circle())
                 .padding(5)
                 .background(Circle())
