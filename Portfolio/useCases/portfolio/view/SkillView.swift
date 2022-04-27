@@ -20,7 +20,7 @@ struct SkillView: View {
                 
         }
         
-        .frame(width: width,height: 110)
+        .frame(width: width,height: width)
         .background(RoundedRectangle(cornerRadius: 12).opacity(0.075))
     }
 }

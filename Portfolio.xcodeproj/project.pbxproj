@@ -32,6 +32,7 @@
 		9EDB2E642815FCA10068F325 /* SkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E632815FCA10068F325 /* SkillsView.swift */; };
 		9EDB2E66281610430068F325 /* ExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E65281610430068F325 /* ExperienceView.swift */; };
 		9EDB2E68281625FB0068F325 /* ExperiencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E67281625FB0068F325 /* ExperiencesView.swift */; };
+		9EEFCC812819E55000CE85C8 /* CustomEnvironmentKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEFCC802819E55000CE85C8 /* CustomEnvironmentKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		9EDB2E632815FCA10068F325 /* SkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsView.swift; sourceTree = "<group>"; };
 		9EDB2E65281610430068F325 /* ExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceView.swift; sourceTree = "<group>"; };
 		9EDB2E67281625FB0068F325 /* ExperiencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencesView.swift; sourceTree = "<group>"; };
+		9EEFCC802819E55000CE85C8 /* CustomEnvironmentKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEnvironmentKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		9EDB2E182815E0000068F325 /* Portfolio */ = {
 			isa = PBXGroup;
 			children = (
+				9EEFCC7E2819E51A00CE85C8 /* utils */,
 				9EDB2E512815E6BD0068F325 /* service */,
 				9EDB2E4A2815E1400068F325 /* model */,
 				9EDB2E492815E0C90068F325 /* useCases */,
@@ -236,6 +239,14 @@
 				9E18B0D92816D94600B95251 /* ProjectsView.swift */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		9EEFCC7E2819E51A00CE85C8 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				9EEFCC802819E55000CE85C8 /* CustomEnvironmentKeys.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,6 +392,7 @@
 				9EDB2E502815E6130068F325 /* Portfolio.swift in Sources */,
 				9E18B0D62816D40300B95251 /* Project.swift in Sources */,
 				9EDB2E602815F0730068F325 /* HeaderView.swift in Sources */,
+				9EEFCC812819E55000CE85C8 /* CustomEnvironmentKeys.swift in Sources */,
 				9EDB2E4E2815E5190068F325 /* Experience.swift in Sources */,
 				9EDB2E1C2815E0000068F325 /* ContentView.swift in Sources */,
 				9EDB2E5E2815EE400068F325 /* PortfolioView.swift in Sources */,

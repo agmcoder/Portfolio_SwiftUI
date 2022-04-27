@@ -10,7 +10,8 @@ import SwiftUI
 struct HeaderView: View {
     @Environment(\.colorScheme) var colorScheme
     var appModel:AppModel
-    
+    @Environment(\.width) var width
+
     
     
     var body: some View {
@@ -19,7 +20,7 @@ struct HeaderView: View {
             Image("logo_agmcoder")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 100, height: 100)
+                .frame(width: width*0.4, height: width*0.4)
                 .padding(5)
                 .background(Circle())
                 .shadow(color:colorScheme == .light ? .black:.gray , radius: 10)

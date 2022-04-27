@@ -48,7 +48,7 @@ struct SkillsView: View {
                     
                 ){
                     ForEach(skills) {skill in
-                        SkillView(skill: skill, width: width / 3 - 15)
+                        SkillView(skill: skill, width: width / 3.2)
                     }
                 }
                     //.padding(.top,38)

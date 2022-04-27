@@ -11,6 +11,8 @@ import SwiftUI
 struct PortfolioApp: App {
     let persistenceController = PersistenceController.shared
 
+    
+    
     var body: some Scene {
         WindowGroup {
             PortfolioView()
