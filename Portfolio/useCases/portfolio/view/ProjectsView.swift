@@ -11,6 +11,7 @@ struct ProjectsView: View {
     var projects:[Project]
     @Environment(\.width) var width
     @Environment(\.heigth) var heigth
+    @Environment(\.colorScheme) var colorScheme
     
     @State var showProjects=true
     
@@ -62,7 +63,12 @@ struct ProjectsView: View {
                             }
                     }
                     .tabViewStyle(.page(indexDisplayMode: .always))
+                    .indexViewStyle(.page(backgroundDisplayMode: .always))
+                
                     .frame( height: heigth * 0.4)
+                    .onAppear(){
+                        setupAppearance()
+                    }
                     
                     
                 }
@@ -73,12 +79,27 @@ struct ProjectsView: View {
         }
 
     }
+    func setupAppearance() {
+        UIPageControl.appearance().currentPageIndicatorTintColor = colorScheme == .light ? .black : .white
+        UIPageControl.appearance().pageIndicatorTintColor = UIColor.black.withAlphaComponent(0.2)
+      }
 }
 
 struct ProjectsView_Previews: PreviewProvider {
     static var previews: some View {
         GeometryReader{proxy in
             ProjectsView(projects: AppModel().portfolio.projects)
+
+            
+            
+        }
+    }
+}
+
+struct ProjectsView_Previews_dark: PreviewProvider {
+    static var previews: some View {
+        GeometryReader{proxy in
+            ProjectsView(projects: AppModel().portfolio.projects).preferredColorScheme(.dark)
 
             
             
