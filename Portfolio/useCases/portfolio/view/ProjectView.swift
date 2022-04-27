@@ -17,20 +17,35 @@ struct ProjectView: View {
     
     var body: some View {
         VStack{
-            Image(project.image)
-                .resizable()
-                .scaledToFit()
-                .padding(.top,10)
-                .padding(.horizontal,10)
+            ZStack{
+                Rectangle().shadow( radius: 10, x: 0, y: 10)
+                    .opacity(0.03)
+                    .cornerRadius(30)
                 
-            Text(project.name)
-                .font(.title2)
-                .padding(.vertical)
+                VStack{
+                    Image(project.image)
+                        .resizable()
+                        .scaledToFit()
+                        .padding(.top,10)
+                        .padding(.horizontal,10)
+                    
+                    Text(project.name)
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .padding(.vertical,5)
+                }
+                
+                
+            }
+            
+                
+            
                 
             
             
         }
         .frame(width:width * 0.9 ,height: heigth * 0.3)
+
         .background(RoundedRectangle(cornerRadius: 12).opacity(0.075)).padding()
     }
 }

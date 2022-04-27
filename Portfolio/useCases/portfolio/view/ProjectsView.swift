@@ -46,16 +46,23 @@ struct ProjectsView: View {
             if(showProjects){
                 VStack{
                     TabView{
+                        
                         ForEach(projects, id:\.id) { project in
-                                    
+                                    //cards animation
                             GeometryReader { proxy in
+                                let minX=proxy.frame(in: .global).minX
                                 ProjectView(project:project)
+                                    .rotation3DEffect(.degrees(minX / -10), axis: (x:1,y:1,z:0))
+                                    .blur(radius: abs(minX/40))
+                                
+                                //Text("\(minX)")
+                                    
                             }
                             
                             }
                     }
                     .tabViewStyle(.page(indexDisplayMode: .always))
-                    .frame( height: heigth * 0.3)
+                    .frame( height: heigth * 0.4)
                     
                     
                 }
