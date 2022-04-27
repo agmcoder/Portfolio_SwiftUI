@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ProjectsView: View {
     var projects:[Project]
-    
+    @Environment(\.width) var width
+    @Environment(\.heigth) var heigth
     
     @State var showProjects=true
     
@@ -44,21 +45,18 @@ struct ProjectsView: View {
             
             if(showProjects){
                 VStack{
-                    ScrollView(.horizontal){
-                            LazyHStack(alignment: .top, spacing: 0){
-                                
-
-                                ForEach(projects) { project in
+                    TabView{
+                        ForEach(projects, id:\.id) { project in
                                     
-                                    ProjectView(project:project)
-                            
-                                }
-                                
-                        
+                            GeometryReader { proxy in
+                                ProjectView(project:project)
                             }
-                        
-                        
+                            
+                            }
                     }
+                    .tabViewStyle(.page(indexDisplayMode: .always))
+                    .frame( height: heigth * 0.3)
+                    
                     
                 }
                 
