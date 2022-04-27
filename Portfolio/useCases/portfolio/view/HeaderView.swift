@@ -18,12 +18,15 @@ struct HeaderView: View {
         VStack{
             Image("logo_agmcoder")
                 .resizable()
+                .scaledToFit()
                 .frame(width: 100, height: 100)
-                .scaledToFill()
-                .clipShape(Circle())
                 .padding(5)
                 .background(Circle())
                 .shadow(color:colorScheme == .light ? .black:.gray , radius: 10)
+
+
+
+
             
             Text(appModel.portfolio.name).font(.title2)
             Text(appModel.portfolio.role).font(.caption)
