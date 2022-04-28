@@ -33,6 +33,7 @@
 		9EDB2E66281610430068F325 /* ExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E65281610430068F325 /* ExperienceView.swift */; };
 		9EDB2E68281625FB0068F325 /* ExperiencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E67281625FB0068F325 /* ExperiencesView.swift */; };
 		9EEFCC812819E55000CE85C8 /* CustomEnvironmentKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEFCC802819E55000CE85C8 /* CustomEnvironmentKeys.swift */; };
+		9EF5F49C281AC84100310EFC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9EF5F49B281AC84100310EFC /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EF5F49C281AC84100310EFC /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +267,9 @@
 			dependencies = (
 			);
 			name = Portfolio;
+			packageProductDependencies = (
+				9EF5F49B281AC84100310EFC /* Kingfisher */,
+			);
 			productName = Portfolio;
 			productReference = 9EDB2E162815E0000068F325 /* Portfolio.app */;
 			productType = "com.apple.product-type.application";
@@ -337,6 +342,9 @@
 				Base,
 			);
 			mainGroup = 9EDB2E0D2815E0000068F325;
+			packageReferences = (
+				9EF5F49A281AC84100310EFC /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 9EDB2E172815E0000068F325 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -724,6 +732,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9EF5F49A281AC84100310EFC /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9EF5F49B281AC84100310EFC /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9EF5F49A281AC84100310EFC /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		9EDB2E242815E0020068F325 /* Portfolio.xcdatamodeld */ = {

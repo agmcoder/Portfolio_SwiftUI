@@ -4,8 +4,9 @@
 //
 //  Created by Alejandro Gómez Martín on 25/4/22.
 //
-
+import Foundation
 import SwiftUI
+import Kingfisher
 
 struct ProjectView: View {
     var project:Project
@@ -23,18 +24,26 @@ struct ProjectView: View {
                     .cornerRadius(30)
                 
                 VStack{
+                    if( project.image.contains("http")){
+                        KFImage(URL(string: project.image))
+                            .resizable()
+                            .scaledToFit()
+                            .padding(.top,10)
+                            .padding(.horizontal,10)
+                    }else{
                     Image(project.image)
                         .resizable()
                         .scaledToFit()
                         .padding(.top,10)
                         .padding(.horizontal,10)
                     
+                  
+                }
                     Text(project.name)
                         .font(.title2)
                         .fontWeight(.semibold)
                         .padding(.vertical,5)
                 }
-                
                 
             }
             
@@ -52,12 +61,12 @@ struct ProjectView: View {
 
 struct ProjectView_Previews: PreviewProvider {
     static var previews: some View {
-        ProjectView(project:Project(id: UUID().uuidString, name: "prueba de projecto", image: "android") )
+        ProjectView(project:Project(id: UUID().uuidString, name: "prueba de projecto", image: "https://cdn1.iconfinder.com/data/icons/design-essentials-1/24/faceid-1024.png") )
     }
 }
 struct ProjectView_Previews_dark: PreviewProvider {
     static var previews: some View {
-        ProjectView(project:Project(id: UUID().uuidString, name: "prueba de projecto", image: "android") ).preferredColorScheme(.dark)
+        ProjectView(project:Project(id: UUID().uuidString, name: "prueba de projecto", image: "https://cdn1.iconfinder.com/data/icons/design-essentials-1/24/faceid-1024.png") ).preferredColorScheme(.dark)
         
     }
 }

@@ -6,9 +6,10 @@
 //
 
 import Foundation
-
 struct Project:Identifiable{
+
     var id:String
     let name:String
     let image:String
+
 }
