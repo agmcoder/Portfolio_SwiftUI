@@ -4,7 +4,7 @@
 //
 //  Created by Alejandro Gómez Martín on 28/4/22.
 //
-import WebKit
+/*import WebKit
 import Foundation
 import SwiftUI
 
@@ -22,7 +22,8 @@ struct GifImage : UIViewRepresentable{
         let url = Bundle.main.url(forResource: name, withExtension: "gif")!
         let data = try! Data(contentsOf: url)
         webView.load(
-            data,mimeType: "image/gif",
+            data,
+            mimeType: "image/gif",
             characterEncodingName: "UTF-8",
             baseURL: url.deletingLastPathComponent()
         )
@@ -37,6 +38,8 @@ struct GifImage : UIViewRepresentable{
 }
 struct GifImage_Previews:PreviewProvider{
     static var previews: some View{
-        GifImage("faceidgif")
+        GifImage("faceidgif").frame(width: 100, height: 100).scaledToFit()
     }
 }
+*/
+

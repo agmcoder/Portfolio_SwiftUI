@@ -27,8 +27,8 @@ class AppModel:ObservableObject{
             Project(id: UUID().uuidString, name: "Projecto android", image: "android"),
             Project(id: UUID().uuidString, name: "Projecto android", image: "android"),
             Project(id: UUID().uuidString, name: "Projecto android", image: "android"),
-            Project(id: UUID().uuidString, name: "Biometric athentication svg", image: "faceidgif"),
-            Project(id: UUID().uuidString, name: "ProgressView SwiftUI", image: "https://www.clipartmax.com/png/full/200-2006536_loading-loader-progress-wait-spinner-load-comments-spinner-load.png")
+            Project(id: UUID().uuidString, name: "Biometric athentication svg", image: "fingerprint"),
+            Project(id: UUID().uuidString, name: "ProgressView SwiftUI", image: "https://www.simpleswiftguide.com/wp-content/uploads/2019/11/linear-progress-bar-indicator-swiftui.png")
             
             
             

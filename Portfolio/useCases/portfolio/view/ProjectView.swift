@@ -20,8 +20,9 @@ struct ProjectView: View {
     var body: some View {
         VStack{
             ZStack{
-                Rectangle().shadow( radius: 10, x: 0, y: 10)
-                    .opacity(0.03)
+                Rectangle()
+                    .shadow( radius: 10, x: 0, y: 10)
+                    .opacity(0.1)
                     .cornerRadius(30)
                 
                 VStack{
@@ -29,19 +30,20 @@ struct ProjectView: View {
                         KFImage(URL(string: project.image))
                             .resizable()
                             .scaledToFit()
+                            .cornerRadius(20)
                             .padding(.top,10)
                             .padding(.horizontal,10)
                         
                     }
                     else if(project.image.contains("gif")){
-                        GifImage(project.image)
-                            .scaledToFit()
+                       
                     }
                     else{
                         
                     Image(project.image)
                         .resizable()
                         .scaledToFit()
+                        .cornerRadius(20)
                         .padding(.top,10)
                         .padding(.horizontal,10)
                         //.foregroundColor(colorScheme == .light ? .black : .white)
@@ -52,6 +54,8 @@ struct ProjectView: View {
                         .font(.title2)
                         .fontWeight(.semibold)
                         .padding(.vertical,5)
+                        .padding(.horizontal)
+                        .multilineTextAlignment(.center)
                 }
                 
             }
@@ -63,19 +67,19 @@ struct ProjectView: View {
             
         }
         .frame(width:width * 0.9 ,height: heigth * 0.3)
+        .padding()
 
-        .background(RoundedRectangle(cornerRadius: 12).opacity(0.075)).padding()
     }
 }
 
 struct ProjectView_Previews: PreviewProvider {
     static var previews: some View {
-        ProjectView(project:Project(id: UUID().uuidString, name: "prueba de projecto", image: "biometric") )
+        ProjectView(project:Project(id: UUID().uuidString, name: "prueba de projecto", image: "https://www.simpleswiftguide.com/wp-content/uploads/2019/11/linear-progress-bar-indicator-swiftui.png") )
     }
 }
 struct ProjectView_Previews_dark: PreviewProvider {
     static var previews: some View {
-        ProjectView(project:Project(id: UUID().uuidString, name: "prueba de projecto", image: "https://cdn1.iconfinder.com/data/icons/design-essentials-1/24/faceid-1024.png") ).preferredColorScheme(.dark)
+        ProjectView(project:Project(id: UUID().uuidString, name: "prueba de projecto", image: "fingerprint") ).preferredColorScheme(.dark)
         
     }
 }
