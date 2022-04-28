@@ -11,6 +11,8 @@
 		9E18B0D82816D49100B95251 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E18B0D72816D49100B95251 /* ProjectView.swift */; };
 		9E18B0DA2816D94600B95251 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E18B0D92816D94600B95251 /* ProjectsView.swift */; };
 		9EC45A03281B38B200C42918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EC45A02281B38B200C42918 /* Assets.xcassets */; };
+		9EC45A07281B47D900C42918 /* ProjectDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC45A06281B47D900C42918 /* ProjectDescriptionView.swift */; };
+		9EC45A09281B491400C42918 /* ProjectDescriptionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC45A08281B491400C42918 /* ProjectDescriptionHeaderView.swift */; };
 		9EDB2E1A2815E0000068F325 /* PortfolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E192815E0000068F325 /* PortfolioApp.swift */; };
 		9EDB2E1C2815E0000068F325 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E1B2815E0000068F325 /* ContentView.swift */; };
 		9EDB2E212815E0020068F325 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EDB2E202815E0020068F325 /* Preview Assets.xcassets */; };
@@ -59,6 +61,8 @@
 		9E18B0D72816D49100B95251 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
 		9E18B0D92816D94600B95251 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		9EC45A02281B38B200C42918 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9EC45A06281B47D900C42918 /* ProjectDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDescriptionView.swift; sourceTree = "<group>"; };
+		9EC45A08281B491400C42918 /* ProjectDescriptionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDescriptionHeaderView.swift; sourceTree = "<group>"; };
 		9EDB2E162815E0000068F325 /* Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EDB2E192815E0000068F325 /* PortfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioApp.swift; sourceTree = "<group>"; };
 		9EDB2E1B2815E0000068F325 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -113,6 +117,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9EC45A04281B45FB00C42918 /* projectDescription */ = {
+			isa = PBXGroup;
+			children = (
+				9EC45A05281B460C00C42918 /* view */,
+			);
+			path = projectDescription;
+			sourceTree = "<group>";
+		};
+		9EC45A05281B460C00C42918 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9EC45A06281B47D900C42918 /* ProjectDescriptionView.swift */,
+				9EC45A08281B491400C42918 /* ProjectDescriptionHeaderView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		9EDB2E0D2815E0000068F325 = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +208,7 @@
 		9EDB2E492815E0C90068F325 /* useCases */ = {
 			isa = PBXGroup;
 			children = (
+				9EC45A04281B45FB00C42918 /* projectDescription */,
 				9EDB2E5B2815EE160068F325 /* portfolio */,
 			);
 			path = useCases;
@@ -400,8 +422,10 @@
 				9EDB2E622815F8B90068F325 /* SkillView.swift in Sources */,
 				9EDB2E68281625FB0068F325 /* ExperiencesView.swift in Sources */,
 				9EDB2E4C2815E17E0068F325 /* Skill.swift in Sources */,
+				9EC45A09281B491400C42918 /* ProjectDescriptionHeaderView.swift in Sources */,
 				9EDB2E532815E6C90068F325 /* AppModel.swift in Sources */,
 				9EDB2E502815E6130068F325 /* Portfolio.swift in Sources */,
+				9EC45A07281B47D900C42918 /* ProjectDescriptionView.swift in Sources */,
 				9E18B0D62816D40300B95251 /* Project.swift in Sources */,
 				9EDB2E602815F0730068F325 /* HeaderView.swift in Sources */,
 				9EEFCC812819E55000CE85C8 /* CustomEnvironmentKeys.swift in Sources */,
