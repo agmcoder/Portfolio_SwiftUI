@@ -17,20 +17,20 @@ class AppModel:ObservableObject{
             Skill(id: UUID().uuidString, skillName: "Jetpak Compose", image: "jetpack_compose"),
             Skill(id: UUID().uuidString, skillName: "Android", image: "android"),
             Skill(id: UUID().uuidString, skillName: "Firebase", image: "firebase")
-    ],
+        ],
         experiences: [
             Experience(id: UUID().uuidString, companyName: "Somisata S.L.", role: "Full Stack Developer", duration: "Sept 2021 - Apr - 2022"),
             Experience(id: UUID().uuidString, companyName: "Freelance", role: "Native Mobile Developer", duration: "Sept 2021 - present")
         ],
         projects: [
-        
+            
             Project(id: UUID().uuidString, name: "Projecto android", image: "android"),
             Project(id: UUID().uuidString, name: "Projecto android", image: "android"),
             Project(id: UUID().uuidString, name: "Projecto android", image: "android"),
-            Project(id: UUID().uuidString, name: "Projecto android", image: "android"),
-            Project(id: UUID().uuidString, name: "Projecto android", image: "android"),
-            Project(id: UUID().uuidString, name: "Projecto android", image: "https://cdn1.iconfinder.com/data/icons/design-essentials-1/24/faceid-1024.png")
-
+            Project(id: UUID().uuidString, name: "Biometric athentication svg", image: "faceidgif"),
+            Project(id: UUID().uuidString, name: "ProgressView SwiftUI", image: "https://www.clipartmax.com/png/full/200-2006536_loading-loader-progress-wait-spinner-load-comments-spinner-load.png")
+            
+            
             
         ]
     )

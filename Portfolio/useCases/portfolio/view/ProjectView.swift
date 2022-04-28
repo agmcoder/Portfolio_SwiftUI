@@ -10,6 +10,7 @@ import Kingfisher
 
 struct ProjectView: View {
     var project:Project
+    @Environment(\.colorScheme) var colorScheme
     @Environment(\.width) var width
     @Environment(\.heigth) var heigth
 
@@ -30,12 +31,20 @@ struct ProjectView: View {
                             .scaledToFit()
                             .padding(.top,10)
                             .padding(.horizontal,10)
-                    }else{
+                        
+                    }
+                    else if(project.image.contains("gif")){
+                        GifImage(project.image)
+                            .scaledToFit()
+                    }
+                    else{
+                        
                     Image(project.image)
                         .resizable()
                         .scaledToFit()
                         .padding(.top,10)
                         .padding(.horizontal,10)
+                        //.foregroundColor(colorScheme == .light ? .black : .white)
                     
                   
                 }
@@ -61,7 +70,7 @@ struct ProjectView: View {
 
 struct ProjectView_Previews: PreviewProvider {
     static var previews: some View {
-        ProjectView(project:Project(id: UUID().uuidString, name: "prueba de projecto", image: "https://cdn1.iconfinder.com/data/icons/design-essentials-1/24/faceid-1024.png") )
+        ProjectView(project:Project(id: UUID().uuidString, name: "prueba de projecto", image: "biometric") )
     }
 }
 struct ProjectView_Previews_dark: PreviewProvider {

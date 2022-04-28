@@ -60,7 +60,7 @@ struct ProjectsView: View {
                                     
                             }
                             
-                            }
+                        }
                     }
                     .tabViewStyle(.page(indexDisplayMode: .always))
                     .indexViewStyle(.page(backgroundDisplayMode: .always))
