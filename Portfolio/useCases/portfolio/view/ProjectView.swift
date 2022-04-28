@@ -74,12 +74,12 @@ struct ProjectView: View {
 
 struct ProjectView_Previews: PreviewProvider {
     static var previews: some View {
-        ProjectView(project:Project(id: UUID().uuidString, name: "prueba de projecto", image: "https://www.simpleswiftguide.com/wp-content/uploads/2019/11/linear-progress-bar-indicator-swiftui.png") )
+        ProjectView(project:Project(id: UUID().uuidString, name: "prueba de projecto", image: "https://www.simpleswiftguide.com/wp-content/uploads/2019/11/linear-progress-bar-indicator-swiftui.png", description: "") )
     }
 }
 struct ProjectView_Previews_dark: PreviewProvider {
     static var previews: some View {
-        ProjectView(project:Project(id: UUID().uuidString, name: "prueba de projecto", image: "fingerprint") ).preferredColorScheme(.dark)
+        ProjectView(project:Project(id: UUID().uuidString, name: "prueba de projecto", image: "fingerprint", description: "") ).preferredColorScheme(.dark)
         
     }
 }

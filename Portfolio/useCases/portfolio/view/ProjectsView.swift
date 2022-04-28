@@ -16,6 +16,7 @@ struct ProjectsView: View {
     @State var showProjects=true
     
     var body: some View {
+        NavigationView{
 
         VStack {
             HStack(spacing:16){
@@ -49,6 +50,7 @@ struct ProjectsView: View {
                     TabView{
                         
                         ForEach(projects, id:\.id) { project in
+                            
                                     //cards animation
                             GeometryReader { proxy in
                                 let minX=proxy.frame(in: .global).minX
@@ -76,6 +78,7 @@ struct ProjectsView: View {
                 
             }
             
+        }
         }
 
     }

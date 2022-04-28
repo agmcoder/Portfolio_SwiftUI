@@ -13,6 +13,7 @@
 		9EC45A03281B38B200C42918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EC45A02281B38B200C42918 /* Assets.xcassets */; };
 		9EC45A07281B47D900C42918 /* ProjectDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC45A06281B47D900C42918 /* ProjectDescriptionView.swift */; };
 		9EC45A09281B491400C42918 /* ProjectDescriptionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC45A08281B491400C42918 /* ProjectDescriptionHeaderView.swift */; };
+		9EC45A0B281B4C0D00C42918 /* ProjectDescriptionBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC45A0A281B4C0D00C42918 /* ProjectDescriptionBodyView.swift */; };
 		9EDB2E1A2815E0000068F325 /* PortfolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E192815E0000068F325 /* PortfolioApp.swift */; };
 		9EDB2E1C2815E0000068F325 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E1B2815E0000068F325 /* ContentView.swift */; };
 		9EDB2E212815E0020068F325 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EDB2E202815E0020068F325 /* Preview Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		9EC45A02281B38B200C42918 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EC45A06281B47D900C42918 /* ProjectDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDescriptionView.swift; sourceTree = "<group>"; };
 		9EC45A08281B491400C42918 /* ProjectDescriptionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDescriptionHeaderView.swift; sourceTree = "<group>"; };
+		9EC45A0A281B4C0D00C42918 /* ProjectDescriptionBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDescriptionBodyView.swift; sourceTree = "<group>"; };
 		9EDB2E162815E0000068F325 /* Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EDB2E192815E0000068F325 /* PortfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioApp.swift; sourceTree = "<group>"; };
 		9EDB2E1B2815E0000068F325 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			children = (
 				9EC45A06281B47D900C42918 /* ProjectDescriptionView.swift */,
 				9EC45A08281B491400C42918 /* ProjectDescriptionHeaderView.swift */,
+				9EC45A0A281B4C0D00C42918 /* ProjectDescriptionBodyView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 			files = (
 				9EDB2E642815FCA10068F325 /* SkillsView.swift in Sources */,
 				9EDB2E262815E0020068F325 /* Portfolio.xcdatamodeld in Sources */,
+				9EC45A0B281B4C0D00C42918 /* ProjectDescriptionBodyView.swift in Sources */,
 				9EDB2E232815E0020068F325 /* Persistence.swift in Sources */,
 				9EF5F4A0281B0EE800310EFC /* GifImage.swift in Sources */,
 				9EDB2E622815F8B90068F325 /* SkillView.swift in Sources */,
