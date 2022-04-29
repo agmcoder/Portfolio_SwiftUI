@@ -16,6 +16,8 @@ struct ProjectDescriptionView: View {
                 ProjectDescriptionBodyView(project: project)
                     
         }
+                .navigationBarTitleDisplayMode(.inline)
+
     }
 }
 
