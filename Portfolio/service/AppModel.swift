@@ -4,7 +4,6 @@
 //
 //  Created by Alejandro Gómez Martín on 24/4/22.
 //
-import Kingfisher
 import Foundation
 class AppModel:ObservableObject{
     var portfolio:Portfolio=Portfolio(
@@ -20,7 +19,8 @@ class AppModel:ObservableObject{
         ],
         experiences: [
             Experience(id: UUID().uuidString, companyName: "Somisata S.L.", role: "Full Stack Developer", duration: "Sept 2021 - Apr - 2022"),
-            Experience(id: UUID().uuidString, companyName: "Freelance", role: "Native Mobile Developer", duration: "Sept 2021 - present")
+            Experience(id: UUID().uuidString, companyName: "Freelance", role: "Native Mobile Developer", duration: "Sept 2021 - present"),
+            Experience(id: UUID().uuidString, companyName: "Entelgy",role: ".Net Software Engineer", duration: "May 2022 - present")
         ],
         projects: [
             
