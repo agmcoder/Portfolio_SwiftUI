@@ -14,27 +14,29 @@ struct PortfolioView: View {
     
     //MARK:- view
     var body: some View {
-        ZStack{
-            Color(UIColor.systemBackground)
-                .ignoresSafeArea()
-            ScrollView(
-                .vertical,
-                showsIndicators: false
-            ){
-                VStack{
-                LazyVStack(alignment:.center){
-                    HeaderView(appModel: appModel)
-                    SkillsView(skills: appModel.portfolio.skills, width: width-40)
-                        .padding(.top,32)
-                    ExperiencesView(experiences: appModel.portfolio.experiences)
-                }.padding(.horizontal,24)
-                ProjectsView(projects: appModel.portfolio.projects)
-                    
-                    Spacer()
+        NavigationView{
+            ZStack{
+                Color(UIColor.systemBackground)
+                    .ignoresSafeArea()
+                ScrollView(
+                    .vertical,
+                    showsIndicators: false
+                ){
+                    VStack{
+                        LazyVStack(alignment:.center){
+                            HeaderView(appModel: appModel)
+                            SkillsView(skills: appModel.portfolio.skills, width: width-40)
+                                .padding(.top,32)
+                            ExperiencesView(experiences: appModel.portfolio.experiences)
+                        }.padding(.horizontal,24)
+                        ProjectsView(projects: appModel.portfolio.projects)
+                        
+                        Spacer()
+                        
+                    }.padding(.top,10)
                     
                 }
-                
-            }
+            }.navigationBarHidden(true)
         }
     }
 }
@@ -43,7 +45,7 @@ struct PortfolioView_Previews_light: PreviewProvider {
         GeometryReader{
             proxy in
             PortfolioView().colorScheme(.light)
-
+            
         }
     }
 }
@@ -53,7 +55,7 @@ struct PortfolioView_Previews_dark: PreviewProvider {
         GeometryReader{
             proxy in
             PortfolioView().colorScheme(.dark)
-
+            
         }
     }
 }

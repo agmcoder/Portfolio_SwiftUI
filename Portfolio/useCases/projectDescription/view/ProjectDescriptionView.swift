@@ -11,14 +11,13 @@ struct ProjectDescriptionView: View {
     let project:Project
     
     var body: some View {
-        
-        VStack{
-            GeometryReader{proxy in
-                
-                
-                
-            }
+                VStack{
+                ProjectDescriptionHeaderView(project: project)
+                ProjectDescriptionBodyView(project: project)
+                    
         }
+                .navigationBarTitleDisplayMode(.inline)
+
     }
 }
 

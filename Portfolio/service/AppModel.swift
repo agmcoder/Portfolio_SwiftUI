@@ -24,11 +24,11 @@ class AppModel:ObservableObject{
         ],
         projects: [
             
-            Project(id: UUID().uuidString, name: "Projecto android", image: "android"),
-            Project(id: UUID().uuidString, name: "Projecto android", image: "android"),
-            Project(id: UUID().uuidString, name: "Projecto android", image: "android"),
-            Project(id: UUID().uuidString, name: "Biometric athentication svg", image: "fingerprint"),
-            Project(id: UUID().uuidString, name: "ProgressView SwiftUI", image: "https://www.simpleswiftguide.com/wp-content/uploads/2019/11/linear-progress-bar-indicator-swiftui.png")
+            Project(id: UUID().uuidString, name: "Location Tracker With Jetpack Compose", image: "location_tracker_jetpack_compose", description: "this application is build in Android Studio with Kotlin and Jetpack Compose.you can practice and learn with this project how we can work with a clean code filosofy and layer structure."),
+            Project(id: UUID().uuidString, name: "Projecto android", image: "location_tracker_swfitui", description: "this application is build in Android Studio with Kotlin and Jetpack Compose.you can practice and learn with this project how we can work with a clean code filosofy and layer structure."),
+            Project(id: UUID().uuidString, name: "Projecto android", image: "android", description: "this application is build in Android Studio with Kotlin and Jetpack Compose.you can practice and learn with this project how we can work with a clean code filosofy and layer structure."),
+            Project(id: UUID().uuidString, name: "Biometric athentication svg", image: "fingerprint", description: "this application is build in Android Studio with Kotlin and Jetpack Compose.you can practice and learn with this project how we can work with a clean code filosofy and layer structure."),
+            Project(id: UUID().uuidString, name: "ProgressView SwiftUI", image: "https://www.simpleswiftguide.com/wp-content/uploads/2019/11/linear-progress-bar-indicator-swiftui.png", description: "this application is build in Android Studio with Kotlin and Jetpack Compose.you can practice and learn with this project how we can work with a clean code filosofy and layer structure.")
             
             
             
