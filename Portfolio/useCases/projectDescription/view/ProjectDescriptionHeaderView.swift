@@ -17,34 +17,35 @@ struct ProjectDescriptionHeaderView: View {
     
     var body: some View {
         VStack{
-            GeometryReader{ proxy in
-                if( project.image.contains("http")){
-                    KFImage(URL(string: project.image))
-                        .resizable()
-                        .scaledToFit()
-                        .cornerRadius(20)
-                        .padding(.top,10)
-                        .padding(.horizontal,10)
-                    
-                }
-                else if(project.image.contains("gif")){
-                   
-                }
-                else{
-                    
+            if( project.image.contains("http")){
+                KFImage(URL(string: project.image))
+                    .resizable()
+                    .scaledToFit()
+                    .cornerRadius(20)
+                    .padding(.top,10)
+                    .padding(.horizontal,10)
+                
+            }
+            else if(project.image.contains("gif")){
+                
+            }
+            else{
+                
                 Image(project.image)
                     .resizable()
                     .scaledToFit()
                     .cornerRadius(20)
                     .padding(.top,10)
                     .padding(.horizontal,10)
-                    //.foregroundColor(colorScheme == .light ? .black : .white)
+                //.foregroundColor(colorScheme == .light ? .black : .white)
                 
-              
-            }
+                
+                
                 
             }
+            
         }
+        .frame( height: UIScreen.main.bounds.height * 0.3)
     }
 }
 

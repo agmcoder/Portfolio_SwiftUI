@@ -10,9 +10,16 @@ import Kingfisher
 
 struct ProjectView: View {
     var project:Project
+    @ObservedObject var appThemeVM=AppThemeViewModel()
     @Environment(\.colorScheme) var colorScheme
     @Environment(\.width) var width
     @Environment(\.heigth) var heigth
+    
+   
+    
+
+   
+    
 
 
     
@@ -22,8 +29,11 @@ struct ProjectView: View {
             ZStack{
                 Rectangle()
                     .shadow( radius: 10, x: 0, y: 10)
-                    .opacity(0.1)
+                    .foregroundColor(Color(UIColor.blue))
+                    .opacity(colorScheme == .light ? 0.1 : 0.5)
                     .cornerRadius(30)
+                
+                
                 
                 VStack{
                     if( project.image.contains("http")){
@@ -50,6 +60,7 @@ struct ProjectView: View {
                     
                   
                 }
+                    Spacer()
                     Text(project.name)
                         .font(.title2)
                         .fontWeight(.semibold)
@@ -74,12 +85,12 @@ struct ProjectView: View {
 
 struct ProjectView_Previews: PreviewProvider {
     static var previews: some View {
-        ProjectView(project:Project(id: UUID().uuidString, name: "prueba de projecto", image: "https://www.simpleswiftguide.com/wp-content/uploads/2019/11/linear-progress-bar-indicator-swiftui.png") )
+        ProjectView(project:Project(id: UUID().uuidString, name: "prueba de projecto", image: "https://www.simpleswiftguide.com/wp-content/uploads/2019/11/linear-progress-bar-indicator-swiftui.png", description: "") )
     }
 }
 struct ProjectView_Previews_dark: PreviewProvider {
     static var previews: some View {
-        ProjectView(project:Project(id: UUID().uuidString, name: "prueba de projecto", image: "fingerprint") ).preferredColorScheme(.dark)
+        ProjectView(project:Project(id: UUID().uuidString, name: "prueba de projecto", image: "fingerprint", description: "") ).preferredColorScheme(.dark)
         
     }
 }

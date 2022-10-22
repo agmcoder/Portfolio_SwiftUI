@@ -29,17 +29,17 @@ struct HeaderView: View {
             
             
             
-            Text(appModel.portfolio.name).font(.title2)
-            Text(appModel.portfolio.role).font(.caption)
+            Text(appModel.portfolio.name).font(.system(size: UIScreen.main.bounds.width*0.07)).fontWeight(.bold)
+            Text(appModel.portfolio.role).font(.system(size: UIScreen.main.bounds.width*0.05)).fontWeight(.semibold)
             HStack(){
                 Image(systemName: "location.fill")
                 
-                Text(appModel.portfolio.location).font(.footnote)
+                Text(appModel.portfolio.location).font(.system(size: UIScreen.main.bounds.width*0.045))
             }
             .padding(.top,10)
             .opacity(0.5)
             
-            Text(appModel.portfolio.description).font(.system(size: 12)).opacity(0.7)
+            Text(appModel.portfolio.description).font(.system(size: UIScreen.main.bounds.width*0.05)).opacity(0.7)
                 .padding(.top,24)
                 .lineSpacing(12)
             
