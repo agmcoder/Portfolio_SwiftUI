@@ -12,8 +12,6 @@ struct HeaderView: View {
     var appModel:AppModel
     @Environment(\.width) var width
     
-    
-    
     var body: some View {
         
         VStack{
@@ -23,23 +21,21 @@ struct HeaderView: View {
                 .frame(width: width*0.4, height: width*0.4)
                 .padding(5)
                 .background(Circle())
-                .shadow(color:colorScheme == .light ? .black:.gray , radius: 10)
-            
-            
-            
-            
-            
-            Text(appModel.portfolio.name).font(.system(size: UIScreen.main.bounds.width*0.07)).fontWeight(.bold)
-            Text(appModel.portfolio.role).font(.system(size: UIScreen.main.bounds.width*0.05)).fontWeight(.semibold)
+                .shadow(color:Color.theme.profileBackgroundColor, radius: 10)
+ 
+            Text(appModel.portfolio.name)
+                .font(.system(size: UIScreen.main.bounds.width*0.07)).fontWeight(.bold)
+            Text(appModel.portfolio.role)
+                .font(.system(size: UIScreen.main.bounds.width*0.05)).fontWeight(.semibold)
             HStack(){
                 Image(systemName: "location.fill")
-                
                 Text(appModel.portfolio.location).font(.system(size: UIScreen.main.bounds.width*0.045))
             }
             .padding(.top,10)
             .opacity(0.5)
             
-            Text(appModel.portfolio.description).font(.system(size: UIScreen.main.bounds.width*0.05)).opacity(0.7)
+            Text(appModel.portfolio.description)
+                .font(.system(size: UIScreen.main.bounds.width*0.05)).opacity(0.7)
                 .padding(.top,24)
                 .lineSpacing(12)
             

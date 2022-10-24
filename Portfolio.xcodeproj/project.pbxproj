@@ -11,6 +11,7 @@
 		9E18B0D82816D49100B95251 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E18B0D72816D49100B95251 /* ProjectView.swift */; };
 		9E18B0DA2816D94600B95251 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E18B0D92816D94600B95251 /* ProjectsView.swift */; };
 		9E4B653A281E18AB0071CC53 /* AppThemeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B6539281E18AB0071CC53 /* AppThemeViewModel.swift */; };
+		9E5B973E290717BC0035E512 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5B973D290717BC0035E512 /* Color.swift */; };
 		9EC45A03281B38B200C42918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EC45A02281B38B200C42918 /* Assets.xcassets */; };
 		9EC45A07281B47D900C42918 /* ProjectDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC45A06281B47D900C42918 /* ProjectDescriptionView.swift */; };
 		9EC45A09281B491400C42918 /* ProjectDescriptionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC45A08281B491400C42918 /* ProjectDescriptionHeaderView.swift */; };
@@ -63,6 +64,7 @@
 		9E18B0D72816D49100B95251 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
 		9E18B0D92816D94600B95251 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		9E4B6539281E18AB0071CC53 /* AppThemeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppThemeViewModel.swift; sourceTree = "<group>"; };
+		9E5B973D290717BC0035E512 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		9EC45A02281B38B200C42918 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EC45A06281B47D900C42918 /* ProjectDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDescriptionView.swift; sourceTree = "<group>"; };
 		9EC45A08281B491400C42918 /* ProjectDescriptionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDescriptionHeaderView.swift; sourceTree = "<group>"; };
@@ -127,6 +129,14 @@
 				9E4B6539281E18AB0071CC53 /* AppThemeViewModel.swift */,
 			);
 			path = viewModel;
+			sourceTree = "<group>";
+		};
+		9E5B973C2907179B0035E512 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9E5B973D290717BC0035E512 /* Color.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		9EC45A04281B45FB00C42918 /* projectDescription */ = {
@@ -284,6 +294,7 @@
 		9EEFCC7E2819E51A00CE85C8 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				9E5B973C2907179B0035E512 /* Extensions */,
 				9EEFCC802819E55000CE85C8 /* CustomEnvironmentKeys.swift */,
 				9EF5F49F281B0EE800310EFC /* GifImage.swift */,
 			);
@@ -434,6 +445,7 @@
 				9EC45A0B281B4C0D00C42918 /* ProjectDescriptionBodyView.swift in Sources */,
 				9EDB2E232815E0020068F325 /* Persistence.swift in Sources */,
 				9EF5F4A0281B0EE800310EFC /* GifImage.swift in Sources */,
+				9E5B973E290717BC0035E512 /* Color.swift in Sources */,
 				9EDB2E622815F8B90068F325 /* SkillView.swift in Sources */,
 				9EDB2E68281625FB0068F325 /* ExperiencesView.swift in Sources */,
 				9EDB2E4C2815E17E0068F325 /* Skill.swift in Sources */,
