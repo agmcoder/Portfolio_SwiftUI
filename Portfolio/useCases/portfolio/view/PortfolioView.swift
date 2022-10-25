@@ -36,8 +36,10 @@ struct PortfolioView: View {
                     }.padding(.top,10)
                     
                 }
-            }.navigationBarHidden(true)
+            }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
+        .navigationBarHidden(true)
     }
 }
 struct PortfolioView_Previews_light: PreviewProvider {
