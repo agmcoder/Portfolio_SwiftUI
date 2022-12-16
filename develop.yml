@@ -1,0 +1,25 @@
+workflows:
+  build_and_test:
+    name: Build and test
+    # ...
+    triggers:
+      - event:
+          type: push
+          branches:
+            include:
+              - develop
+    # Exécution des tests unitaires
+    test:
+      - script:
+          name: Run unit tests
+          commands:
+            - xcodebuild clean test
+              -project "$APPLE_APP_NAME.xcodeproj"
+              -scheme "$APPLE_APP_NAME"
+              -destination "platform=iOS Simulator,name=iPhone 11,OS=latest"
+              -enableCodeCoverage YES
+              -derivedDataPath "$FCI_BUILD_DIR"
+              CODE_SIGN_IDENTITY=""
+              CODE_SIGNING_REQUIRED=NO
+              | xcpretty
+

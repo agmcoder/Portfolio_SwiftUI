@@ -15,15 +15,6 @@ struct ProjectView: View {
     @Environment(\.width) var width
     @Environment(\.heigth) var heigth
     
-   
-    
-
-   
-    
-
-
-    
-    
     var body: some View {
         VStack{
             ZStack{
@@ -32,8 +23,6 @@ struct ProjectView: View {
                     .foregroundColor(Color(UIColor.blue))
                     .opacity(colorScheme == .light ? 0.1 : 0.5)
                     .cornerRadius(30)
-                
-                
                 
                 VStack{
                     if( project.image.contains("http")){
@@ -58,8 +47,8 @@ struct ProjectView: View {
                         .padding(.horizontal,10)
                         //.foregroundColor(colorScheme == .light ? .black : .white)
                     
-                  
                 }
+                    
                     Spacer()
                     Text(project.name)
                         .font(.title2)
@@ -68,14 +57,7 @@ struct ProjectView: View {
                         .padding(.horizontal)
                         .multilineTextAlignment(.center)
                 }
-                
             }
-            
-                
-            
-                
-            
-            
         }
         .frame(width:width * 0.9 ,height: heigth * 0.3)
         .padding()
