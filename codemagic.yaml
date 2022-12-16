@@ -2,7 +2,7 @@ workflows:
   my-workflow:
     instance_type: mac_pro
     environment:
-      xcode: 12.5
+      xcode: 14.2
   
   
   
