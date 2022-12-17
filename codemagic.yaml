@@ -23,7 +23,7 @@ workflows:
               --workspace ${XCODE_WORKSPACE?} \
               --scheme ${XCODE_SCHEME?} \
               --device "iPhone 14 pro"
-        test_report: build/ios/test/*.xml
+        #test_report: build/ios/test/*.xml
         
 # pipeline for main
   main:
