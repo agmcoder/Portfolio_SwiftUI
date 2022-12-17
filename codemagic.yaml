@@ -10,7 +10,7 @@ workflows:
       - name: say hello
         script: echo "Hello Codemagician!"
       - name: run unit tests
-        script:
+        script: |
           - xcodebuild test -project Portfolio.xcodeproj -scheme Portfolio -destination "platform=iOS Simulator,name=iPhone 11,OS=14.2"
       
         
