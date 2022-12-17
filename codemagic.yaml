@@ -5,6 +5,10 @@ workflows:
     instance_type: mac_mini_m1
     environment:
       xcode: 14.2
+      vars:
+        BUNDLE_ID: "io.codemagic.sample.iosnative"
+        XCODE_WORKSPACE: "CodemagicSample.xcworkspace" # <-- Name of your Xcode workspace
+        XCODE_SCHEME: "CodemagicSample" # <-- Name of your Xcode scheme
 
     scripts:
       - name: say hello
