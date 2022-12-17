@@ -1,0 +1,12 @@
+
+trigger:
+- develop
+
+pool:
+  vmImage: 'macOS-latest'
+
+steps:
+- script: |
+    xcodebuild -workspace MyApp.xcworkspace -scheme MyApp -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11,OS=14.0' test
+  displayName: 'Run unit tests'
+
