@@ -6,17 +6,24 @@ workflows:
     environment:
       xcode: 14.2
       vars:
-        BUNDLE_ID: "io.codemagic.sample.iosnative"
-        XCODE_WORKSPACE: "CodemagicSample.xcworkspace" # <-- Name of your Xcode workspace
-        XCODE_SCHEME: "CodemagicSample" # <-- Name of your Xcode scheme
+        #BUNDLE_ID: "io.codemagic.sample.iosnative"
+        XCODE_WORKSPACE: "Portfolio.xcworkspace" # <-- Name of your Xcode workspace
+        XCODE_SCHEME: "Portfolio" # <-- Name of your Xcode scheme
 
     scripts:
       - name: say hello
         script: echo "Hello Codemagician!"
-      - name: run unit tests
+        
+        
+      - name: Run iOS tests
         script: |
-          - xcodebuild test -project Portfolio.xcodeproj -scheme Portfolio -destination "platform=iOS Simulator,name=iPhone 11,OS=14.2"
-      
+          set -e # exit on first failed command
+
+          xcode-project run-tests \
+              --workspace ${XCODE_WORKSPACE?} \
+              --scheme ${XCODE_SCHEME?} \
+              --device "iPhone 12"
+        test_report: build/ios/test/*.xml
         
 # pipeline for main
   main:
