@@ -15,4 +15,4 @@ jobs:
         gem install xcpretty-travis-formatter
     - name: Compilar y ejecutar test unitarios
       run: |
-        xcodebuild clean test -project Portfolio.xcodeproj -scheme Portfolio -destination "platform:iOS Simulator, id:324F9D55-AA38-445A-BC9A-0B7F3E18BC20, OS:16.0, name:iPhone 14 Pro Max" -enableCodeCoverage YES | xcpretty -f `xcpretty-travis-formatter`
+        xcodebuild clean test -project Portfolio.xcodeproj -scheme Portfolio -destination "platform:iOS Simulator, OS:16.0, name:iPhone 14 Pro Max" -enableCodeCoverage YES | xcpretty -f `xcpretty-travis-formatter`
