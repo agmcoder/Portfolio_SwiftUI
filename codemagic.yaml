@@ -20,7 +20,7 @@ workflows:
           set -e # exit on first failed command
 
           xcode-project run-tests \
-              --workspace ${XCODE_WORKSPACE?} \
+              --workspace Portfolio.xcodeproj \
               --scheme ${XCODE_SCHEME?} \
         
 # pipeline for main
