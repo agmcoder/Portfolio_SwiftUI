@@ -7,8 +7,8 @@ workflows:
       xcode: 14.2
       vars:
         #BUNDLE_ID: "io.codemagic.sample.iosnative"
-        XCODE_WORKSPACE: "Portfolio.xcodeproj" # <-- Name of your Xcode workspace
-        XCODE_SCHEME: "PortfolioTests" # <-- Name of your Xcode scheme
+        XCODE_WORKSPACE: "Portfolio.xcworkspace" # <-- Name of your Xcode workspace
+        XCODE_SCHEME: "Portfolio" # <-- Name of your Xcode scheme
 
     scripts:
       - name: say hello
