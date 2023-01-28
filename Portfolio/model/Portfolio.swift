@@ -6,12 +6,12 @@
 //
 
 import Foundation
+
 struct Portfolio{
     let name:String
     let role:String
     let description:String
     let location:String
-    
     
     let skills:[Skill]
     let experiences:[Experience]

@@ -6,11 +6,12 @@
 //
 
 import Foundation
-struct Project:Identifiable{
 
-    var id:String
-    let name:String
-    let image:String
-    let description:String
+struct Project:Identifiable{
+ 
+    var id: UUID = UUID()
+    let name: String
+    let image: String
+    let description: String
 
 }
