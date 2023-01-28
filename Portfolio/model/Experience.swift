@@ -6,9 +6,12 @@
 //
 
 import Foundation
+
 struct Experience:Identifiable{
-    var id:String
+    
+    var id: UUID = UUID()
     let companyName:String
     let role:String
     let duration:String
+    
 }

@@ -35,7 +35,7 @@ struct ProjectView: View {
                         
                     }
                     else if(project.image.contains("gif")){
-                       
+                       // it´s not implemented yet
                     }
                     else{
                         
@@ -45,7 +45,6 @@ struct ProjectView: View {
                         .cornerRadius(20)
                         .padding(.top,10)
                         .padding(.horizontal,10)
-                        //.foregroundColor(colorScheme == .light ? .black : .white)
                     
                 }
                     
@@ -67,12 +66,12 @@ struct ProjectView: View {
 
 struct ProjectView_Previews: PreviewProvider {
     static var previews: some View {
-        ProjectView(project:Project(id: UUID().uuidString, name: "prueba de projecto", image: "https://www.simpleswiftguide.com/wp-content/uploads/2019/11/linear-progress-bar-indicator-swiftui.png", description: "") )
+        ProjectView(project:Project( name: "prueba de projecto", image: "https://www.simpleswiftguide.com/wp-content/uploads/2019/11/linear-progress-bar-indicator-swiftui.png", description: "") )
     }
 }
 struct ProjectView_Previews_dark: PreviewProvider {
     static var previews: some View {
-        ProjectView(project:Project(id: UUID().uuidString, name: "prueba de projecto", image: "fingerprint", description: "") ).preferredColorScheme(.dark)
+        ProjectView(project:Project( name: "prueba de projecto", image: "fingerprint", description: "") ).preferredColorScheme(.dark)
         
     }
 }

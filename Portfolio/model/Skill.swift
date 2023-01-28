@@ -8,8 +8,8 @@
 import Foundation
 
 struct Skill : Identifiable{
-    var id:String
-    var skillName:String
-    let image:String
+    var id: UUID = UUID()
+    var skillName: String
+    let image: String
     
 }
