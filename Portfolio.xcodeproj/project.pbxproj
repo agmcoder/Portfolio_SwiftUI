@@ -28,9 +28,6 @@
 		9EDB2E4E2815E5190068F325 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E4D2815E5190068F325 /* Experience.swift */; };
 		9EDB2E502815E6130068F325 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E4F2815E6130068F325 /* Portfolio.swift */; };
 		9EDB2E532815E6C90068F325 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E522815E6C90068F325 /* AppModel.swift */; };
-		9EDB2E582815E8900068F325 /* icons8-swiftui-150(@3x).png in Resources */ = {isa = PBXBuildFile; fileRef = 9EDB2E552815E88F0068F325 /* icons8-swiftui-150(@3x).png */; };
-		9EDB2E592815E8900068F325 /* icons8-swiftui-100(@2x).png in Resources */ = {isa = PBXBuildFile; fileRef = 9EDB2E562815E88F0068F325 /* icons8-swiftui-100(@2x).png */; };
-		9EDB2E5A2815E8900068F325 /* icons8-swiftui-50(@1x).png in Resources */ = {isa = PBXBuildFile; fileRef = 9EDB2E572815E88F0068F325 /* icons8-swiftui-50(@1x).png */; };
 		9EDB2E5E2815EE400068F325 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E5D2815EE400068F325 /* PortfolioView.swift */; };
 		9EDB2E602815F0730068F325 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E5F2815F0730068F325 /* HeaderView.swift */; };
 		9EDB2E622815F8B90068F325 /* SkillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB2E612815F8B90068F325 /* SkillView.swift */; };
@@ -85,9 +82,6 @@
 		9EDB2E4D2815E5190068F325 /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
 		9EDB2E4F2815E6130068F325 /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
 		9EDB2E522815E6C90068F325 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
-		9EDB2E552815E88F0068F325 /* icons8-swiftui-150(@3x).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-swiftui-150(@3x).png"; sourceTree = "<group>"; };
-		9EDB2E562815E88F0068F325 /* icons8-swiftui-100(@2x).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-swiftui-100(@2x).png"; sourceTree = "<group>"; };
-		9EDB2E572815E88F0068F325 /* icons8-swiftui-50(@1x).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-swiftui-50(@1x).png"; sourceTree = "<group>"; };
 		9EDB2E5D2815EE400068F325 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		9EDB2E5F2815F0730068F325 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		9EDB2E612815F8B90068F325 /* SkillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillView.swift; sourceTree = "<group>"; };
@@ -187,7 +181,6 @@
 				9EDB2E512815E6BD0068F325 /* service */,
 				9EDB2E4A2815E1400068F325 /* model */,
 				9EDB2E492815E0C90068F325 /* useCases */,
-				9EDB2E482815E0730068F325 /* resources */,
 				9EDB2E192815E0000068F325 /* PortfolioApp.swift */,
 				9EDB2E1B2815E0000068F325 /* ContentView.swift */,
 				9EDB2E222815E0020068F325 /* Persistence.swift */,
@@ -223,14 +216,6 @@
 			path = PortfolioUITests;
 			sourceTree = "<group>";
 		};
-		9EDB2E482815E0730068F325 /* resources */ = {
-			isa = PBXGroup;
-			children = (
-				9EDB2E542815E88F0068F325 /* SwiftUI-50-100-150px */,
-			);
-			path = resources;
-			sourceTree = "<group>";
-		};
 		9EDB2E492815E0C90068F325 /* useCases */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,17 +242,6 @@
 				9EDB2E522815E6C90068F325 /* AppModel.swift */,
 			);
 			path = service;
-			sourceTree = "<group>";
-		};
-		9EDB2E542815E88F0068F325 /* SwiftUI-50-100-150px */ = {
-			isa = PBXGroup;
-			children = (
-				9EDB2E552815E88F0068F325 /* icons8-swiftui-150(@3x).png */,
-				9EDB2E562815E88F0068F325 /* icons8-swiftui-100(@2x).png */,
-				9EDB2E572815E88F0068F325 /* icons8-swiftui-50(@1x).png */,
-			);
-			name = "SwiftUI-50-100-150px";
-			path = "../../../../../Downloads/SwiftUI-50-100-150px";
 			sourceTree = "<group>";
 		};
 		9EDB2E5B2815EE160068F325 /* portfolio */ = {
@@ -414,11 +388,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EDB2E5A2815E8900068F325 /* icons8-swiftui-50(@1x).png in Resources */,
-				9EDB2E582815E8900068F325 /* icons8-swiftui-150(@3x).png in Resources */,
 				9EDB2E212815E0020068F325 /* Preview Assets.xcassets in Resources */,
 				9EE328E2294DF6E8004AF53C /* codemagic.yaml in Resources */,
-				9EDB2E592815E8900068F325 /* icons8-swiftui-100(@2x).png in Resources */,
 				9EC45A03281B38B200C42918 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
