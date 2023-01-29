@@ -9,8 +9,9 @@ import SwiftUI
 
 struct HeaderView: View {
     @Environment(\.colorScheme) var colorScheme
-    var appModel:AppModel
     @Environment(\.width) var width
+
+    var appModel:AppModel
     
     var body: some View {
         
@@ -22,6 +23,12 @@ struct HeaderView: View {
                 .padding(5)
                 .background(Circle())
                 .shadow(color:Color.theme.profileBackgroundColor, radius: 10)
+            
+            HStack{
+                
+                GithubButton()
+                LinkedinButton()
+            }
  
             Text(appModel.portfolio.name)
                 .font(.system(size: UIScreen.main.bounds.width*0.07)).fontWeight(.bold)

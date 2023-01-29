@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07F96F622986BF2D003B4406 /* GithubButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F96F612986BF2D003B4406 /* GithubButton.swift */; };
+		07F96F652986C24C003B4406 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F96F642986C24C003B4406 /* Configuration.swift */; };
+		07F96F682986CC1C003B4406 /* Configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 07F96F672986CC1C003B4406 /* Configuration.json */; };
+		07F96F6A2986D19D003B4406 /* LinkedinButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F96F692986D19D003B4406 /* LinkedinButton.swift */; };
 		9E18B0D62816D40300B95251 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E18B0D52816D40300B95251 /* Project.swift */; };
 		9E18B0D82816D49100B95251 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E18B0D72816D49100B95251 /* ProjectView.swift */; };
 		9E18B0DA2816D94600B95251 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E18B0D92816D94600B95251 /* ProjectsView.swift */; };
@@ -58,6 +62,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07F96F612986BF2D003B4406 /* GithubButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubButton.swift; sourceTree = "<group>"; };
+		07F96F642986C24C003B4406 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		07F96F672986CC1C003B4406 /* Configuration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Configuration.json; sourceTree = "<group>"; };
+		07F96F692986D19D003B4406 /* LinkedinButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedinButton.swift; sourceTree = "<group>"; };
 		9E18B0D52816D40300B95251 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		9E18B0D72816D49100B95251 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
 		9E18B0D92816D94600B95251 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
@@ -119,6 +127,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07F96F602986BEF0003B4406 /* customComponent */ = {
+			isa = PBXGroup;
+			children = (
+				07F96F612986BF2D003B4406 /* GithubButton.swift */,
+				07F96F692986D19D003B4406 /* LinkedinButton.swift */,
+			);
+			path = customComponent;
+			sourceTree = "<group>";
+		};
+		07F96F632986C233003B4406 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				07F96F642986C24C003B4406 /* Configuration.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		07F96F662986CBEB003B4406 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				07F96F672986CC1C003B4406 /* Configuration.json */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
 		9E4B6538281E188D0071CC53 /* viewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +209,9 @@
 		9EDB2E182815E0000068F325 /* Portfolio */ = {
 			isa = PBXGroup;
 			children = (
+				07F96F662986CBEB003B4406 /* resources */,
+				07F96F632986C233003B4406 /* util */,
+				07F96F602986BEF0003B4406 /* customComponent */,
 				9EC45A02281B38B200C42918 /* Assets.xcassets */,
 				9EEFCC7E2819E51A00CE85C8 /* utils */,
 				9EDB2E512815E6BD0068F325 /* service */,
@@ -390,6 +426,7 @@
 			files = (
 				9EDB2E212815E0020068F325 /* Preview Assets.xcassets in Resources */,
 				9EE328E2294DF6E8004AF53C /* codemagic.yaml in Resources */,
+				07F96F682986CC1C003B4406 /* Configuration.json in Resources */,
 				9EC45A03281B38B200C42918 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,11 +466,14 @@
 				9EDB2E502815E6130068F325 /* Portfolio.swift in Sources */,
 				9EC45A07281B47D900C42918 /* ProjectDescriptionView.swift in Sources */,
 				9E18B0D62816D40300B95251 /* Project.swift in Sources */,
+				07F96F6A2986D19D003B4406 /* LinkedinButton.swift in Sources */,
 				9EDB2E602815F0730068F325 /* HeaderView.swift in Sources */,
 				9EEFCC812819E55000CE85C8 /* CustomEnvironmentKeys.swift in Sources */,
 				9EDB2E4E2815E5190068F325 /* Experience.swift in Sources */,
 				9EDB2E1C2815E0000068F325 /* ContentView.swift in Sources */,
+				07F96F622986BF2D003B4406 /* GithubButton.swift in Sources */,
 				9EDB2E5E2815EE400068F325 /* PortfolioView.swift in Sources */,
+				07F96F652986C24C003B4406 /* Configuration.swift in Sources */,
 				9EDB2E1A2815E0000068F325 /* PortfolioApp.swift in Sources */,
 				9E4B653A281E18AB0071CC53 /* AppThemeViewModel.swift in Sources */,
 				9E18B0D82816D49100B95251 /* ProjectView.swift in Sources */,

@@ -10,10 +10,7 @@ import Kingfisher
 
 struct ProjectDescriptionHeaderView: View {
     
-    
     let project:Project
-    
-    
     
     var body: some View {
         VStack{
@@ -38,9 +35,6 @@ struct ProjectDescriptionHeaderView: View {
                     .padding(.top,10)
                     .padding(.horizontal,10)
                 //.foregroundColor(colorScheme == .light ? .black : .white)
-                
-                
-                
                 
             }
             

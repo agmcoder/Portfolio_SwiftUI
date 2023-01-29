@@ -32,13 +32,13 @@ class AppModel:ObservableObject{
         // porjects
         projects: [
             
-            Project( name: "WhatsApp Link", image: "whatsAppLinkIcon", description: "this application it been build with Swift and SwiftUI. whith this app you can send a WhatsApp Message without saving a contact. Some times it´s we need to open a WhatsApp conversation but we don´t want to save the number so this is a great solution."),
+            Project( name: "WhatsApp Link", image: "whatsAppLinkIcon", description: "this application it been build with Swift and SwiftUI. whith this app you can send a WhatsApp Message without saving a contact. Some times it´s we need to open a WhatsApp conversation but we don´t want to save the number so this is a great solution.", githubUrl: "https://github.com/agmcoder/WhatsAppLink_SwiftUI"),
             
-            Project( name: "Biometric athentication svg", image: "fingerprint", description: "This application has build with Xcode framework and as programming languages have been used Swift and SwiftUI. It´s a project where is possible to learn how to use biometric authentication within an Iphone app"),
+            Project( name: "Biometric athentication svg", image: "fingerprint", description: "This application has build with Xcode framework and as programming languages have been used Swift and SwiftUI. It´s a project where is possible to learn how to use biometric authentication within an Iphone app", githubUrl: "https://github.com/agmcoder/biometric_authentication_SwiftUI"),
             
-            Project( name: "ProgressView SwiftUI", image: "https://www.simpleswiftguide.com/wp-content/uploads/2019/11/linear-progress-bar-indicator-swiftui.png", description: "The user experience is so importante for the app client, if your app needs to download any data, your logic can´t block the main thread and need to show a progressView."),
+            Project( name: "ProgressView SwiftUI", image: "https://www.simpleswiftguide.com/wp-content/uploads/2019/11/linear-progress-bar-indicator-swiftui.png", description: "The user experience is so importante for the app client, if your app needs to download any data, your logic can´t block the main thread and need to show a progressView.", githubUrl: "https://github.com/agmcoder/ProgressView_SwiftUI"),
             
-            Project( name: "JSON fetch SwiftUI", image: "json", description: "It´s usually in an application needs to fetch data or from the server. In this project you will learn how to fetch a JSON.")
+            Project( name: "JSON fetch SwiftUI", image: "json", description: "It´s usually in an application needs to fetch data or from the server. In this project you will learn how to fetch a JSON.", githubUrl: "https://github.com/agmcoder/JSON-FETCH-SWIFTUI")
             
             
             

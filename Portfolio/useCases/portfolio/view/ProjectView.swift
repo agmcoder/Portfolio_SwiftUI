@@ -66,12 +66,12 @@ struct ProjectView: View {
 
 struct ProjectView_Previews: PreviewProvider {
     static var previews: some View {
-        ProjectView(project:Project( name: "prueba de projecto", image: "https://www.simpleswiftguide.com/wp-content/uploads/2019/11/linear-progress-bar-indicator-swiftui.png", description: "") )
+        ProjectView(project:Project( name: "prueba de projecto", image: "https://www.simpleswiftguide.com/wp-content/uploads/2019/11/linear-progress-bar-indicator-swiftui.png", description: "", githubUrl: "") )
     }
 }
 struct ProjectView_Previews_dark: PreviewProvider {
     static var previews: some View {
-        ProjectView(project:Project( name: "prueba de projecto", image: "fingerprint", description: "") ).preferredColorScheme(.dark)
+        ProjectView(project:Project( name: "prueba de projecto", image: "fingerprint", description: "", githubUrl: "") ).preferredColorScheme(.dark)
         
     }
 }
