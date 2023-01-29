@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HeaderView: View {
+    
     @Environment(\.colorScheme) var colorScheme
     @Environment(\.width) var width
 
@@ -47,9 +48,6 @@ struct HeaderView: View {
                 .lineSpacing(12)
             
         }
-        
-        
-        
     }
 }
 

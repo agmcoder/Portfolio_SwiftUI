@@ -49,12 +49,15 @@ struct ProjectView: View {
                 }
                     
                     Spacer()
+                    
                     Text(project.name)
                         .font(.title2)
                         .fontWeight(.semibold)
                         .padding(.vertical,5)
                         .padding(.horizontal)
                         .multilineTextAlignment(.center)
+                    
+                    
                 }
             }
         }

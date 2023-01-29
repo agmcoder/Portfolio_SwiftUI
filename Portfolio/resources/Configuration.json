@@ -2,12 +2,28 @@
 {
     "links": [
         {
-            "name": "github",
+            "name": "githubProfile",
             "url": "https://github.com/agmcoder"
         },
         {
-            "name": "linkedin",
+            "name": "linkedinProfile",
             "url": "https://www.linkedin.com/in/alejandro-gomez-martin/"
+        },
+        {
+            "name": "whatsAppLink",
+            "url": "https://github.com/agmcoder/WhatsAppLink_SwiftUI"
+        },
+        {
+            "name": "biometricAuthentication",
+            "url": "https://github.com/agmcoder/biometric_authentication_SwiftUI"
+        },
+        {
+            "name": "progressView",
+            "url": "https://github.com/agmcoder/ProgressView_SwiftUI"
+        },
+        {
+            "name": "jsonFetch",
+            "url": "https://github.com/agmcoder/JSON-FETCH-SWIFTUI"
         }
     ]
 }

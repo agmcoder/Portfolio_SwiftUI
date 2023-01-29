@@ -10,14 +10,13 @@ import SwiftUI
 struct ProjectsView: View {
     var projects:[Project]
     @Environment(\.width) var width
-    @Environment(\.heigth) var heigth
+    @Environment(\.heigth) var height
     @Environment(\.colorScheme) var colorScheme
     
     @State var showProjects=true
+    @State var selectedProject: Project?
     
     var body: some View {
-        
-        
         
         VStack {
             HStack(spacing:16){
@@ -32,68 +31,53 @@ struct ProjectsView: View {
                     action:{
                         withAnimation(.easeInOut(duration: 0.40)){
                             showProjects.toggle()
-                            
                         }
                     } ,
                     label: {
                         Image(systemName: "chevron.up")
                             .rotationEffect(self.showProjects ? .zero: .degrees(180))
                     }
-                    
-                ).buttonStyle(PlainButtonStyle())
-                
+                )
+                .buttonStyle(PlainButtonStyle())
                 
                 Spacer()
-            }.padding(.horizontal)
+            }
+            .padding(.horizontal)
             
             if(showProjects){
                 VStack{
                     TabView{
-                            ForEach(projects, id:\.id) { project in
-                                
-                                
-                                
-                                NavigationLink(
-                                    destination:{
-                                        ProjectDescriptionView(project: project)
-                                    },
-                                    label:
-                                        {
-                                            //cards animation
-                                            
-                                            GeometryReader { proxy in
-                                                let minX=proxy.frame(in: .global).minX
-                                                VStack{
-                                                ProjectView(project:project)
-                                                    .rotation3DEffect(.degrees(minX / -3), axis: (x:1,y:0,z:1))
-                                                    .blur(radius: abs(minX / 10))
-                                                //Text("\(minX)")
-                                                }.frame(width:width)
-                                                
-                                            }
-                                        }
-                                ).buttonStyle(PlainButtonStyle())
-                                
+                        ForEach(projects, id:\.id) { project in
+                            //cards animation
+                            GeometryReader { proxy in
+                                let minX=proxy.frame(in: .global).minX
+                                VStack{
+                                    Button(action: {
+                                        self.selectedProject = project
+                                    }) {
+                                        ProjectView(project:project)
+                                            .rotation3DEffect(.degrees(minX / -3), axis: (x:1,y:0,z:1))
+                                            .blur(radius: abs(minX / 10))
+                                        //Text("\(minX)")
+                                    }
+                                }.frame(width:width)
                             }
+                        }
                     }
                     .tabViewStyle(.page(indexDisplayMode: .always))
                     .indexViewStyle(.page(backgroundDisplayMode: .always))
-                    
-                    .frame(width:width, height: heigth * 0.4)
+                    .frame(width:width, height: height * 0.4)
+                    .sheet(item: self.$selectedProject) { project in
+                        SFSafariViewWrapper(url: URL(string: project.githubUrl)!)
+                    }
                     .onAppear(){
                         setupAppearance()
                     }
-                    
-                    
                 }
-                
-                
             }
-            
         }
-        
-        
     }
+    
     func setupAppearance() {
         UIPageControl.appearance().currentPageIndicatorTintColor = colorScheme == .light ? .black : .white
         UIPageControl.appearance().pageIndicatorTintColor = UIColor.black.withAlphaComponent(0.2)
@@ -104,20 +88,10 @@ struct ProjectsView_Previews: PreviewProvider {
     static var previews: some View {
         GeometryReader{proxy in
             ProjectsView(projects: AppModel().portfolio.projects)
-            
-            
-            
         }
     }
 }
-
-struct ProjectsView_Previews_dark: PreviewProvider {
-    static var previews: some View {
-        GeometryReader{proxy in
-            ProjectsView(projects: AppModel().portfolio.projects).preferredColorScheme(.dark)
             
             
             
-        }
-    }
-}
+       

@@ -11,6 +11,8 @@
 		07F96F652986C24C003B4406 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F96F642986C24C003B4406 /* Configuration.swift */; };
 		07F96F682986CC1C003B4406 /* Configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 07F96F672986CC1C003B4406 /* Configuration.json */; };
 		07F96F6A2986D19D003B4406 /* LinkedinButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F96F692986D19D003B4406 /* LinkedinButton.swift */; };
+		07F96F6C2986E754003B4406 /* ConfigurationUrlEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F96F6B2986E754003B4406 /* ConfigurationUrlEnum.swift */; };
+		07F96F6E29872723003B4406 /* WebBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F96F6D29872723003B4406 /* WebBrowser.swift */; };
 		9E18B0D62816D40300B95251 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E18B0D52816D40300B95251 /* Project.swift */; };
 		9E18B0D82816D49100B95251 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E18B0D72816D49100B95251 /* ProjectView.swift */; };
 		9E18B0DA2816D94600B95251 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E18B0D92816D94600B95251 /* ProjectsView.swift */; };
@@ -66,6 +68,8 @@
 		07F96F642986C24C003B4406 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		07F96F672986CC1C003B4406 /* Configuration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Configuration.json; sourceTree = "<group>"; };
 		07F96F692986D19D003B4406 /* LinkedinButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedinButton.swift; sourceTree = "<group>"; };
+		07F96F6B2986E754003B4406 /* ConfigurationUrlEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationUrlEnum.swift; sourceTree = "<group>"; };
+		07F96F6D29872723003B4406 /* WebBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebBrowser.swift; sourceTree = "<group>"; };
 		9E18B0D52816D40300B95251 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		9E18B0D72816D49100B95251 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
 		9E18B0D92816D94600B95251 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 			children = (
 				07F96F612986BF2D003B4406 /* GithubButton.swift */,
 				07F96F692986D19D003B4406 /* LinkedinButton.swift */,
+				07F96F6D29872723003B4406 /* WebBrowser.swift */,
 			);
 			path = customComponent;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 				9EDB2E4D2815E5190068F325 /* Experience.swift */,
 				9EDB2E4F2815E6130068F325 /* Portfolio.swift */,
 				9E18B0D52816D40300B95251 /* Project.swift */,
+				07F96F6B2986E754003B4406 /* ConfigurationUrlEnum.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -472,11 +478,13 @@
 				9EDB2E4E2815E5190068F325 /* Experience.swift in Sources */,
 				9EDB2E1C2815E0000068F325 /* ContentView.swift in Sources */,
 				07F96F622986BF2D003B4406 /* GithubButton.swift in Sources */,
+				07F96F6E29872723003B4406 /* WebBrowser.swift in Sources */,
 				9EDB2E5E2815EE400068F325 /* PortfolioView.swift in Sources */,
 				07F96F652986C24C003B4406 /* Configuration.swift in Sources */,
 				9EDB2E1A2815E0000068F325 /* PortfolioApp.swift in Sources */,
 				9E4B653A281E18AB0071CC53 /* AppThemeViewModel.swift in Sources */,
 				9E18B0D82816D49100B95251 /* ProjectView.swift in Sources */,
+				07F96F6C2986E754003B4406 /* ConfigurationUrlEnum.swift in Sources */,
 				9EDB2E66281610430068F325 /* ExperienceView.swift in Sources */,
 				9E18B0DA2816D94600B95251 /* ProjectsView.swift in Sources */,
 			);

@@ -16,7 +16,7 @@ struct LinkedinButton: View {
         
         Button(
             action:{
-                guard let url = URL(string: Configuration.url(for: "linkedin")) else { return }
+                guard let url = URL(string: ConfigurationUrlEnumString.linkedinProfile.url) else { return }
                 UIApplication.shared.open(url)
             }
         ){

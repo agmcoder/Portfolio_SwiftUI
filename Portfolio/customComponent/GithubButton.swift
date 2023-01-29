@@ -15,7 +15,7 @@ struct GithubButton: View {
     var body: some View {
         Button(
             action:{
-                guard let url = URL(string: Configuration.url(for: "github")) else { return }
+                guard let url = URL(string: ConfigurationUrlEnumString.githubProfile.url) else { return }
                 UIApplication.shared.open(url)
             }
         ){
