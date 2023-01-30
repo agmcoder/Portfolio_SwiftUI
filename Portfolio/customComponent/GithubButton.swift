@@ -11,12 +11,12 @@ struct GithubButton: View {
     
     @Environment(\.colorScheme) var colorScheme
     @Environment(\.width) var width
+    @State var isShowingSheet = false
 
     var body: some View {
         Button(
             action:{
-                guard let url = URL(string: ConfigurationUrlEnumString.githubProfile.url) else { return }
-                UIApplication.shared.open(url)
+                isShowingSheet = true
             }
         ){
             if (colorScheme == .dark) {
@@ -34,6 +34,10 @@ struct GithubButton: View {
                     .padding(5)
             }
         }
+        .sheet(isPresented: $isShowingSheet){
+            SFSafariViewWrapper(url: URL(string: ConfigurationUrlEnumString.githubProfile.url)!)
+        }
+        
     }
 }
 
