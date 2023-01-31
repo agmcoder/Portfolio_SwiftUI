@@ -11,7 +11,7 @@ import Foundation
 
 struct Configuration {
     // Método estático para obtener la URL para un nombre específico
-    static func url(for name: String) -> String {
+    static func getValueFromConfigurationFile(for name: String, parameter: String) -> String {
         // Intentamos obtener la URL del archivo JSON
         guard let file = Bundle.main.url(forResource: "Configuration", withExtension: "json") else { return "" }
         do {
@@ -24,7 +24,7 @@ struct Configuration {
                 // Iteramos sobre cada enlace en el arreglo "links"
                 for link in links {
                     // Verificamos si el enlace actual tiene un nombre y una URL y si el nombre coincide con el nombre proporcionado
-                    if let linkName = link["name"] as? String, let linkUrl = link["url"] as? String, linkName == name {
+                    if let linkName = link["name"] as? String, let linkUrl = link[parameter] as? String, linkName == name {
                         // Si el nombre coincide, devolvemos la URL
                         return linkUrl
                     }

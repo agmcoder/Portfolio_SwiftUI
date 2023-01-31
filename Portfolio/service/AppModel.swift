@@ -41,7 +41,7 @@ class AppModel:ObservableObject{
             
             Project( name: "Biometric athentication svg", image: "fingerprint", description: "This application has build with Xcode framework and as programming languages have been used Swift and SwiftUI. It´s a project where is possible to learn how to use biometric authentication within an Iphone app", githubUrl: ConfigurationUrlEnumString.biometricAuthentication.url),
             
-            Project( name: "ProgressView SwiftUI", image: "https://www.simpleswiftguide.com/wp-content/uploads/2019/11/linear-progress-bar-indicator-swiftui.png", description: "The user experience is so importante for the app client, if your app needs to download any data, your logic can´t block the main thread and need to show a progressView.", githubUrl: ConfigurationUrlEnumString.progressView.url),
+            Project( name: "ProgressView SwiftUI", image: ConfigurationUrlEnumString.progressView.image, description: "The user experience is so importante for the app client, if your app needs to download any data, your logic can´t block the main thread and need to show a progressView.", githubUrl: ConfigurationUrlEnumString.progressView.url),
             
             Project( name: "JSON fetch SwiftUI", image: "json", description: "It´s usually in an application needs to fetch data or from the server. In this project you will learn how to fetch a JSON.", githubUrl: ConfigurationUrlEnumString.jsonFetch.url)
     

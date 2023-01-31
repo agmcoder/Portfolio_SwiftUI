@@ -19,19 +19,38 @@ enum ConfigurationUrlEnumString: String {
     var url: String {
         switch self {
         case .githubProfile:
-            return Configuration.url(for: "githubProfile")
+            return Configuration.getValueFromConfigurationFile(for: "githubProfile",parameter: "url")
         case .linkedinProfile:
-            return Configuration.url(for: "linkedinProfile")
+            return Configuration.getValueFromConfigurationFile(for: "linkedinProfile", parameter: "url")
         case .whatsAppLink:
-            return Configuration.url(for: "whatsAppLink")
+            return Configuration.getValueFromConfigurationFile(for: "whatsAppLink", parameter: "url")
         case .biometricAuthentication:
-            return Configuration.url(for: "biometricAuthentication")
+            return Configuration.getValueFromConfigurationFile(for: "biometricAuthentication", parameter: "url")
          case .progressView:
-            return Configuration.url(for: "progressView")
+            return Configuration.getValueFromConfigurationFile(for: "progressView", parameter: "url")
         case .jsonFetch:
-            return Configuration.url(for: "jsonFetch")
+            return Configuration.getValueFromConfigurationFile(for: "jsonFetch", parameter: "url")
 
         }
     }
+    
+    var image: String {
+        switch self {
+        case .progressView:
+            return Configuration.getValueFromConfigurationFile(for: "progressView", parameter: "image")
+        case .githubProfile:
+            return Configuration.getValueFromConfigurationFile(for: "progressView", parameter: "image")
+        case .linkedinProfile:
+            return Configuration.getValueFromConfigurationFile(for: "progressView", parameter: "image")
+        case .whatsAppLink:
+            return Configuration.getValueFromConfigurationFile(for: "progressView", parameter: "image")
+        case .biometricAuthentication:
+            return Configuration.getValueFromConfigurationFile(for: "progressView", parameter: "image")
+        case .jsonFetch:
+            return Configuration.getValueFromConfigurationFile(for: "progressView", parameter: "image")
+        }
+    }
+    
+    
     
 }

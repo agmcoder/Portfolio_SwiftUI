@@ -19,7 +19,8 @@
         },
         {
             "name": "progressView",
-            "url": "https://github.com/agmcoder/ProgressView_SwiftUI"
+            "url": "https://github.com/agmcoder/ProgressView_SwiftUI",
+            "image": "https://www.simpleswiftguide.com/wp-content/uploads/2019/11/linear-progress-bar-indicator-swiftui.png"
         },
         {
             "name": "jsonFetch",
